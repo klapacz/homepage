@@ -1,9 +1,26 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Korneliusz Łapacz</h1>
-	</main>
-</Layout>
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main class="prose my-container px-4">
+      <p>
+        Hi! I'm Korneliusz Łapacz, a 21-year-old full stack developer from
+        Poland, specializing in Next.js and React. I've been working in the
+        field for 3 years. I graduated from a technical high school with a focus
+        on IT.
+      </p>
+      <p>This site is evolving. Stay tuned for more content 😊</p>
+    </main>
+    <Footer />
+  </body>
+</html>

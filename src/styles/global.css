@@ -1,0 +1,7 @@
+body {
+  @apply text-slate-900;
+}
+
+.my-container {
+  @apply max-w-3xl mx-auto;
+}
